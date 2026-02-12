@@ -8,7 +8,20 @@
 	<meta name="keywords" content="shape up, work out, diet, cardio, strength, stress">
 	<meta name="author" content="Jaymie Last">
 
+	<!-- JQuery CDN -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+	<!-- Slick Nav JS file -->
+	<script src="js/jquery.slicknav.min.js"></script>
+
+	<script type="text/javascript">
+		$(document).ready(function () {
+			$('#nav_menu').slicknav({ prependTo: "#mobilemenu" });
+		});
+	</script>
+
 	<link rel="stylesheet" href="styles/normalize.css">
+	<link rel="stylesheet" href="styles/slicknav.css">
 	<link rel="stylesheet" href="styles/main.css">
 
 	<link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
@@ -28,6 +41,7 @@
 	</header>
 
 	<!-- Navigation bar -->
+	 <nav id="mobilemenu"></nav>
 	<nav id="nav_menu">
 		<ul>
 			<li><a href="index.html">Home</a></li>
@@ -52,7 +66,7 @@
 	</nav>
 
 	<main>
-		<aside>
+		<aside id="left">
 			<nav id="nav_list">
 				<h2>Additional resources</h2>
 				<ul>
